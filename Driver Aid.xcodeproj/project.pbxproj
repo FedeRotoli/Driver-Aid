@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4197E02323CE0100006A4BFA /* Driver Aid WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4197E02223CE0100006A4BFA /* Driver Aid WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4197E02923CE0100006A4BFA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4197E02723CE0100006A4BFA /* Interface.storyboard */; };
+		4197E02B23CE0100006A4BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4197E02A23CE0100006A4BFA /* Assets.xcassets */; };
+		4197E03223CE0100006A4BFA /* Driver Aid WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4197E03123CE0100006A4BFA /* Driver Aid WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4197E03723CE0100006A4BFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197E03623CE0100006A4BFA /* ContentView.swift */; };
+		4197E03923CE0100006A4BFA /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197E03823CE0100006A4BFA /* HostingController.swift */; };
+		4197E03B23CE0100006A4BFA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197E03A23CE0100006A4BFA /* ExtensionDelegate.swift */; };
+		4197E03D23CE0100006A4BFA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197E03C23CE0100006A4BFA /* NotificationController.swift */; };
+		4197E03F23CE0100006A4BFA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197E03E23CE0100006A4BFA /* NotificationView.swift */; };
+		4197E04123CE0100006A4BFA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197E04023CE0100006A4BFA /* ComplicationController.swift */; };
+		4197E04323CE0101006A4BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4197E04223CE0101006A4BFA /* Assets.xcassets */; };
+		4197E04623CE0101006A4BFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4197E04523CE0101006A4BFA /* Preview Assets.xcassets */; };
+		4197E05723CE011B006A4BFA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197E05623CE011B006A4BFA /* SettingsView.swift */; };
+		4197E05923CE0126006A4BFA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197E05823CE0126006A4BFA /* HomeView.swift */; };
+		4197E05D23CE0136006A4BFA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4197E05C23CE0136006A4BFA /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4197E02423CE0100006A4BFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4197E01823CE0100006A4BFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4197E02123CE0100006A4BFA;
+			remoteInfo = "Driver Aid WatchKit App";
+		};
+		4197E03323CE0100006A4BFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4197E01823CE0100006A4BFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4197E03023CE0100006A4BFA;
+			remoteInfo = "Driver Aid WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4197E04E23CE0101006A4BFA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4197E03223CE0100006A4BFA /* Driver Aid WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4197E05223CE0101006A4BFA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4197E02323CE0100006A4BFA /* Driver Aid WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4197E01E23CE0100006A4BFA /* Driver Aid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Driver Aid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4197E02223CE0100006A4BFA /* Driver Aid WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Driver Aid WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4197E02823CE0100006A4BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4197E02A23CE0100006A4BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4197E02C23CE0100006A4BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4197E03123CE0100006A4BFA /* Driver Aid WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Driver Aid WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4197E03623CE0100006A4BFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4197E03823CE0100006A4BFA /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		4197E03A23CE0100006A4BFA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4197E03C23CE0100006A4BFA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		4197E03E23CE0100006A4BFA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		4197E04023CE0100006A4BFA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		4197E04223CE0101006A4BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4197E04523CE0101006A4BFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4197E04723CE0101006A4BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4197E04823CE0101006A4BFA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4197E05623CE011B006A4BFA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4197E05823CE0126006A4BFA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4197E05A23CE0136006A4BFA /* Driver Aid WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Driver Aid WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		4197E05C23CE0136006A4BFA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4197E02E23CE0100006A4BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4197E05D23CE0136006A4BFA /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4197E01723CE0100006A4BFA = {
+			isa = PBXGroup;
+			children = (
+				4197E02623CE0100006A4BFA /* Driver Aid WatchKit App */,
+				4197E03523CE0100006A4BFA /* Driver Aid WatchKit Extension */,
+				4197E01F23CE0100006A4BFA /* Products */,
+				4197E05B23CE0136006A4BFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4197E01F23CE0100006A4BFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4197E01E23CE0100006A4BFA /* Driver Aid.app */,
+				4197E02223CE0100006A4BFA /* Driver Aid WatchKit App.app */,
+				4197E03123CE0100006A4BFA /* Driver Aid WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4197E02623CE0100006A4BFA /* Driver Aid WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4197E02723CE0100006A4BFA /* Interface.storyboard */,
+				4197E02A23CE0100006A4BFA /* Assets.xcassets */,
+				4197E02C23CE0100006A4BFA /* Info.plist */,
+			);
+			path = "Driver Aid WatchKit App";
+			sourceTree = "<group>";
+		};
+		4197E03523CE0100006A4BFA /* Driver Aid WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4197E05A23CE0136006A4BFA /* Driver Aid WatchKit Extension.entitlements */,
+				4197E03623CE0100006A4BFA /* ContentView.swift */,
+				4197E03823CE0100006A4BFA /* HostingController.swift */,
+				4197E03A23CE0100006A4BFA /* ExtensionDelegate.swift */,
+				4197E03C23CE0100006A4BFA /* NotificationController.swift */,
+				4197E03E23CE0100006A4BFA /* NotificationView.swift */,
+				4197E04023CE0100006A4BFA /* ComplicationController.swift */,
+				4197E04223CE0101006A4BFA /* Assets.xcassets */,
+				4197E04723CE0101006A4BFA /* Info.plist */,
+				4197E04823CE0101006A4BFA /* PushNotificationPayload.apns */,
+				4197E04423CE0101006A4BFA /* Preview Content */,
+				4197E05623CE011B006A4BFA /* SettingsView.swift */,
+				4197E05823CE0126006A4BFA /* HomeView.swift */,
+			);
+			path = "Driver Aid WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4197E04423CE0101006A4BFA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4197E04523CE0101006A4BFA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4197E05B23CE0136006A4BFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4197E05C23CE0136006A4BFA /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4197E01D23CE0100006A4BFA /* Driver Aid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4197E05323CE0101006A4BFA /* Build configuration list for PBXNativeTarget "Driver Aid" */;
+			buildPhases = (
+				4197E01C23CE0100006A4BFA /* Resources */,
+				4197E05223CE0101006A4BFA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4197E02523CE0100006A4BFA /* PBXTargetDependency */,
+			);
+			name = "Driver Aid";
+			productName = "Driver Aid";
+			productReference = 4197E01E23CE0100006A4BFA /* Driver Aid.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		4197E02123CE0100006A4BFA /* Driver Aid WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4197E04F23CE0101006A4BFA /* Build configuration list for PBXNativeTarget "Driver Aid WatchKit App" */;
+			buildPhases = (
+				4197E02023CE0100006A4BFA /* Resources */,
+				4197E04E23CE0101006A4BFA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4197E03423CE0100006A4BFA /* PBXTargetDependency */,
+			);
+			name = "Driver Aid WatchKit App";
+			productName = "Driver Aid WatchKit App";
+			productReference = 4197E02223CE0100006A4BFA /* Driver Aid WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4197E03023CE0100006A4BFA /* Driver Aid WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4197E04B23CE0101006A4BFA /* Build configuration list for PBXNativeTarget "Driver Aid WatchKit Extension" */;
+			buildPhases = (
+				4197E02D23CE0100006A4BFA /* Sources */,
+				4197E02E23CE0100006A4BFA /* Frameworks */,
+				4197E02F23CE0100006A4BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Driver Aid WatchKit Extension";
+			productName = "Driver Aid WatchKit Extension";
+			productReference = 4197E03123CE0100006A4BFA /* Driver Aid WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4197E01823CE0100006A4BFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Federico Rotoli";
+				TargetAttributes = {
+					4197E01D23CE0100006A4BFA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					4197E02123CE0100006A4BFA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					4197E03023CE0100006A4BFA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4197E01B23CE0100006A4BFA /* Build configuration list for PBXProject "Driver Aid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4197E01723CE0100006A4BFA;
+			productRefGroup = 4197E01F23CE0100006A4BFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4197E01D23CE0100006A4BFA /* Driver Aid */,
+				4197E02123CE0100006A4BFA /* Driver Aid WatchKit App */,
+				4197E03023CE0100006A4BFA /* Driver Aid WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4197E01C23CE0100006A4BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4197E02023CE0100006A4BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4197E02B23CE0100006A4BFA /* Assets.xcassets in Resources */,
+				4197E02923CE0100006A4BFA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4197E02F23CE0100006A4BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4197E04623CE0101006A4BFA /* Preview Assets.xcassets in Resources */,
+				4197E04323CE0101006A4BFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4197E02D23CE0100006A4BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4197E05723CE011B006A4BFA /* SettingsView.swift in Sources */,
+				4197E03923CE0100006A4BFA /* HostingController.swift in Sources */,
+				4197E03723CE0100006A4BFA /* ContentView.swift in Sources */,
+				4197E03D23CE0100006A4BFA /* NotificationController.swift in Sources */,
+				4197E03B23CE0100006A4BFA /* ExtensionDelegate.swift in Sources */,
+				4197E05923CE0126006A4BFA /* HomeView.swift in Sources */,
+				4197E03F23CE0100006A4BFA /* NotificationView.swift in Sources */,
+				4197E04123CE0100006A4BFA /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4197E02523CE0100006A4BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4197E02123CE0100006A4BFA /* Driver Aid WatchKit App */;
+			targetProxy = 4197E02423CE0100006A4BFA /* PBXContainerItemProxy */;
+		};
+		4197E03423CE0100006A4BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4197E03023CE0100006A4BFA /* Driver Aid WatchKit Extension */;
+			targetProxy = 4197E03323CE0100006A4BFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4197E02723CE0100006A4BFA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4197E02823CE0100006A4BFA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4197E04923CE0101006A4BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4197E04A23CE0101006A4BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4197E04C23CE0101006A4BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Driver Aid WatchKit Extension/Driver Aid WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Driver Aid WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 2FLT9VMGN4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Driver Aid WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.federicorotoli.Driver-Aid.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		4197E04D23CE0101006A4BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Driver Aid WatchKit Extension/Driver Aid WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Driver Aid WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 2FLT9VMGN4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Driver Aid WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.federicorotoli.Driver-Aid.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		4197E05023CE0101006A4BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FLT9VMGN4;
+				IBSC_MODULE = Driver_Aid_WatchKit_Extension;
+				INFOPLIST_FILE = "Driver Aid WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.federicorotoli.Driver-Aid.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		4197E05123CE0101006A4BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FLT9VMGN4;
+				IBSC_MODULE = Driver_Aid_WatchKit_Extension;
+				INFOPLIST_FILE = "Driver Aid WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.federicorotoli.Driver-Aid.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		4197E05423CE0101006A4BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2FLT9VMGN4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.federicorotoli.prova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4197E05523CE0101006A4BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2FLT9VMGN4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.federicorotoli.prova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4197E01B23CE0100006A4BFA /* Build configuration list for PBXProject "Driver Aid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4197E04923CE0101006A4BFA /* Debug */,
+				4197E04A23CE0101006A4BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4197E04B23CE0101006A4BFA /* Build configuration list for PBXNativeTarget "Driver Aid WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4197E04C23CE0101006A4BFA /* Debug */,
+				4197E04D23CE0101006A4BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4197E04F23CE0101006A4BFA /* Build configuration list for PBXNativeTarget "Driver Aid WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4197E05023CE0101006A4BFA /* Debug */,
+				4197E05123CE0101006A4BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4197E05323CE0101006A4BFA /* Build configuration list for PBXNativeTarget "Driver Aid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4197E05423CE0101006A4BFA /* Debug */,
+				4197E05523CE0101006A4BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4197E01823CE0100006A4BFA /* Project object */;
+}
