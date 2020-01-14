@@ -18,27 +18,28 @@ struct HomeView: View {
     
     var body: some View {
         VStack{
-            Button(action:{
+            ZStack{
+                Group{
+                    Circle()
+                        .foregroundColor(activeSecurity ? Color.init(red: 0, green: 135/256, blue: 0):Color.init(red: 0.2, green: 0.2, blue: 0.2).opacity(0.8))
+                        .animation(.easeInOut(duration: 0.5), value: activeSecurity)
+                        .frame(width: 64, height: 64)
+                        
+                    Image(activeSecurity ? "shieldON":"shieldOFF")
+                }
+            }.onTapGesture {
                 self.activeSecurity.toggle()
                 if self.activeSecurity{
                     self.autorizeHealthKit()
                     self.saveMockHeartData()
                 }
-
-            }) {
-                Image(systemName: "checkmark.shield").frame(width: 40, height: 40)
             }
-                .background(activeSecurity ? Color.green:Color.black)
-                .animation(.easeInOut(duration: 0.5))
-                .cornerRadius(10)
-                .frame(width: 64, height: 64)
-                .padding(.horizontal)
 
             Text("Safety")
             Text("BPM:  \(value)")
         }.multilineTextAlignment(.center)
-
     }
+
     
     func autorizeHealthKit() {
         let healthKitTypes: Set = [
@@ -66,3 +67,11 @@ struct HomeView: View {
       })
     }
 }
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
+}
+
+
